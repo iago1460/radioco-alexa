@@ -1,0 +1,153 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "radioco",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "Play",
+          "slots": [
+            {
+              "name": "Show",
+              "type": "Shows",
+              "samples": [
+                "{Show}",
+                "de {Show}"
+              ]
+            },
+            {
+              "name": "Episode_Number",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "Season_Number",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "Station",
+              "type": "Stations"
+            },
+            {
+              "name": "Season_Ordinal",
+              "type": "Ordinals"
+            },
+            {
+              "name": "Episode_Ordinal",
+              "type": "Ordinals"
+            }
+          ],
+          "samples": ["REPLACE with samples"]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "REPLACE with show"
+              }
+            }
+          ],
+          "name": "Shows"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "REPLACE with ordinal"
+              }
+            }
+          ],
+          "name": "Ordinals"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Cuac FM"
+              }
+            }
+          ],
+          "name": "Stations"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "Play",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "Show",
+              "type": "Shows",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1029459471819.248426187592"
+              }
+            },
+            {
+              "name": "Episode_Number",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "Season_Ordinal",
+              "type": "Ordinals",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "Episode_Ordinal",
+              "type": "Ordinals",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1029459471819.248426187592",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "De que programa?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "2"
+}

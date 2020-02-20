@@ -1,0 +1,5 @@
+version: '3.4'
+services:
+  backend:
+    ports:
+      - "${PORT_BACKEND}:8000"

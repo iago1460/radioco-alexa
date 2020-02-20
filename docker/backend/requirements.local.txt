@@ -1,0 +1,9 @@
+-r requirements.txt
+pudb
+django-debug-toolbar
+ptvsd==3.0.0
+jupyter
+django_extensions
+coverage
+flake8
+ipdb

@@ -1,0 +1,8 @@
+**/node_modules
+**/__pycache__
+**/.cache
+test_reports/
+**/.pyc
+**/.kdbx
+**/.ipynb
+.vscode

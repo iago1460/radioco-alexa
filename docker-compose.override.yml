@@ -1,0 +1,13 @@
+version: '3.4'
+services:
+  backend:
+    environment:
+      - DJANGO_SETTINGS_MODULE=radioco.settings.local
+      - DEBUG=1
+    volumes:
+      - ./backend:/srv/radioco/backend
+      - ./docker/backend/scripts:/srv/radioco/scripts
+      - ./test_reports:/srv/radioco/test_reports
+    stdin_open: true
+    tty: true
+    command: python3 manage.py runserver --noreload 0.0.0.0:8000

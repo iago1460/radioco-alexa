@@ -1,0 +1,116 @@
+#!/bin/bash
+
+
+function help() {
+cat << EOF
+Task runner
+
+Usage:
+    run [COMMAND] [ARGS...]
+
+Commands:
+    start               Setup and run the environment
+    manage              Run a django command
+    shell               Shell into the container
+
+If an unknown command is specified, it will be passed to docker-compose. e.g:
+    run up -d
+    run logs
+    run exec django bash
+
+EOF
+}
+
+PROD_COMPOSE_FILES="-f docker-compose.yml -f docker-compose.prod.yml"
+COMPOSE_FILES=""
+
+
+
+function setup() {
+     docker-compose $COMPOSE_FILES build
+     docker-compose $COMPOSE_FILES up -d
+     backend_script setup
+}
+
+
+function backend_script(){
+    SCRIPT=$1
+    shift
+    docker-compose run --rm --no-deps --workdir=/srv/radioco/scripts backend "./$SCRIPT.sh $@"
+}
+
+
+function start_dev(){
+     if [ ! -f ".env" ]; then
+         cp -v .sample.env .env
+         echo "Creating .env file. Update your environment variables and try again."
+         exit 0
+     fi
+     export_file_vars .env
+     docker-compose $COMPOSE_FILES down --remove-orphans
+     docker-compose $COMPOSE_FILES build
+     docker-compose $COMPOSE_FILES up -d
+     echo "RadioCo is running at http://127.0.0.1:${PORT_BACKEND}"
+}
+
+function deploy(){
+    export_file_vars .env
+    docker-compose $PROD_COMPOSE_FILES build
+    docker-compose $PROD_COMPOSE_FILES up -d --force-recreate --remove-orphans
+}
+
+function shell(){
+     docker-compose run --rm backend /bin/bash "$@"
+}
+
+function attach() {
+    running_containers=$(docker-compose ps -q "${1-backend}")
+    container_count=$(echo "$running_containers" | wc -l)
+    if (( $container_count > 1 )); then
+        echo "${txtyellow}WARNING: ${txtreset}More than one container found. Attaching to first one listed in ./run ps."
+    fi
+    docker attach $(echo "$running_containers" | head -n1)
+}
+
+function manage(){
+    docker-compose run --rm --no-deps backend python3 manage.py "$@"
+}
+
+
+function pytest() {
+    docker-compose run --rm --no-deps backend pytest "$@"
+}
+
+
+function coverage(){
+    docker-compose run -e COVERAGE_FILE=reports/.coverage.docker.xml --rm --volume "$(pwd)/reports:/radioco/reports" django coverage run manage.py test radioco
+}
+
+
+function export_file_vars() {
+    # Exports values from .env files, but without clobbering existing variables
+    filename=$1
+    while read -r line; do
+         if [[ $line =~ ^([^=#]+)=(.*)$ ]]; then
+            key=${BASH_REMATCH[1]}
+            value=${BASH_REMATCH[2]}
+            existing_value=${!key}
+            if [ -z $existing_value ]; then
+                export $key="$value"
+            fi
+         fi
+    done < $filename
+}
+
+export_file_vars .env
+
+
+if [ $# -eq 0 ]; then
+    help
+elif [ "$(type -t $1)" == 'function' ]; then
+    func=$1
+    shift
+    $func "$@"
+else
+    docker-compose "$@"
+fi

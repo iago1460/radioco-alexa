@@ -1,0 +1,1445 @@
+{
+  "interactionModel": {
+    "dialog": {
+      "delegationStrategy": "ALWAYS",
+      "intents": [
+        {
+          "confirmationRequired": false,
+          "name": "Play",
+          "prompts": {},
+          "slots": [
+            {
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "name": "Show",
+              "prompts": {
+                "elicitation": "Elicit.Slot.1029459471819.248426187592"
+              },
+              "type": "Shows"
+            },
+            {
+              "confirmationRequired": false,
+              "elicitationRequired": false,
+              "name": "Episode_Number",
+              "prompts": {},
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "confirmationRequired": false,
+              "elicitationRequired": false,
+              "name": "Season_Ordinal",
+              "prompts": {},
+              "type": "Ordinals"
+            },
+            {
+              "confirmationRequired": false,
+              "elicitationRequired": false,
+              "name": "Episode_Ordinal",
+              "prompts": {},
+              "type": "Ordinals"
+            }
+          ]
+        }
+      ]
+    },
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "Play",
+          "samples": [
+            "abra el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "abra el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "abra el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "abra el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abra el cap\u00edtulo {Episode_Number} de {Show}",
+            "abra el episodio {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "abra el episodio {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "abra el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "abra el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abra el episodio {Episode_Number} de {Show}",
+            "abra el podcast {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "abra el podcast {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "abra el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "abra el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abra el podcast {Episode_Number} de {Show}",
+            "abra el programa {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "abra el programa {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "abra el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "abra el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abra el programa {Episode_Number} de {Show}",
+            "abra el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show}",
+            "abra el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show} en {Station}",
+            "abra el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show}",
+            "abra el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abra el {Episode_Ordinal} cap\u00edtulo de {Show}",
+            "abra el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show}",
+            "abra el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show} en {Station}",
+            "abra el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show}",
+            "abra el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abra el {Episode_Ordinal} episodio de {Show}",
+            "abra el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show}",
+            "abra el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show} en {Station}",
+            "abra el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show}",
+            "abra el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abra el {Episode_Ordinal} podcast de {Show}",
+            "abra el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show}",
+            "abra el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show} en {Station}",
+            "abra el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show}",
+            "abra el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abra el {Episode_Ordinal} programa de {Show}",
+            "abra la {Season_Ordinal} temporada de {Show}",
+            "abra la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abra {Show}",
+            "abra {Show} en {Station}",
+            "abre el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "abre el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "abre el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "abre el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abre el cap\u00edtulo {Episode_Number} de {Show}",
+            "abre el episodio {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "abre el episodio {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "abre el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "abre el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abre el episodio {Episode_Number} de {Show}",
+            "abre el podcast {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "abre el podcast {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "abre el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "abre el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abre el podcast {Episode_Number} de {Show}",
+            "abre el programa {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "abre el programa {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "abre el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "abre el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abre el programa {Episode_Number} de {Show}",
+            "abre el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show}",
+            "abre el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show} en {Station}",
+            "abre el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show}",
+            "abre el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abre el {Episode_Ordinal} cap\u00edtulo de {Show}",
+            "abre el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show}",
+            "abre el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show} en {Station}",
+            "abre el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show}",
+            "abre el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abre el {Episode_Ordinal} episodio de {Show}",
+            "abre el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show}",
+            "abre el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show} en {Station}",
+            "abre el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show}",
+            "abre el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abre el {Episode_Ordinal} podcast de {Show}",
+            "abre el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show}",
+            "abre el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show} en {Station}",
+            "abre el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show}",
+            "abre el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abre el {Episode_Ordinal} programa de {Show}",
+            "abre la {Season_Ordinal} temporada de {Show}",
+            "abre la {Season_Ordinal} temporada de {Show} en {Station}",
+            "abre {Show}",
+            "abre {Show} en {Station}",
+            "cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "cap\u00edtulo {Episode_Number} de {Show}",
+            "dame el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "dame el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "dame el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "dame el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "dame el cap\u00edtulo {Episode_Number} de {Show}",
+            "dame el episodio {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "dame el episodio {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "dame el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "dame el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "dame el episodio {Episode_Number} de {Show}",
+            "dame el podcast {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "dame el podcast {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "dame el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "dame el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "dame el podcast {Episode_Number} de {Show}",
+            "dame el programa {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "dame el programa {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "dame el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "dame el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "dame el programa {Episode_Number} de {Show}",
+            "dame el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show}",
+            "dame el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show} en {Station}",
+            "dame el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show}",
+            "dame el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "dame el {Episode_Ordinal} cap\u00edtulo de {Show}",
+            "dame el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show}",
+            "dame el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show} en {Station}",
+            "dame el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show}",
+            "dame el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "dame el {Episode_Ordinal} episodio de {Show}",
+            "dame el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show}",
+            "dame el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show} en {Station}",
+            "dame el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show}",
+            "dame el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "dame el {Episode_Ordinal} podcast de {Show}",
+            "dame el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show}",
+            "dame el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show} en {Station}",
+            "dame el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show}",
+            "dame el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "dame el {Episode_Ordinal} programa de {Show}",
+            "dame la {Season_Ordinal} temporada de {Show}",
+            "dame la {Season_Ordinal} temporada de {Show} en {Station}",
+            "dame {Show}",
+            "dame {Show} en {Station}",
+            "el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "el cap\u00edtulo {Episode_Number} de {Show}",
+            "el episodio {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "el episodio {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "el episodio {Episode_Number} de {Show}",
+            "el podcast {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "el podcast {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "el podcast {Episode_Number} de {Show}",
+            "el programa {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "el programa {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "el programa {Episode_Number} de {Show}",
+            "el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show}",
+            "el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show} en {Station}",
+            "el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show}",
+            "el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "el {Episode_Ordinal} cap\u00edtulo de {Show}",
+            "el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show}",
+            "el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show} en {Station}",
+            "el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show}",
+            "el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "el {Episode_Ordinal} episodio de {Show}",
+            "el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show}",
+            "el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show} en {Station}",
+            "el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show}",
+            "el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "el {Episode_Ordinal} podcast de {Show}",
+            "el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show}",
+            "el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show} en {Station}",
+            "el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show}",
+            "el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "el {Episode_Ordinal} programa de {Show}",
+            "episodio {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "episodio {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "episodio {Episode_Number} de {Show}",
+            "lanza el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "lanza el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "lanza el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "lanza el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "lanza el cap\u00edtulo {Episode_Number} de {Show}",
+            "lanza el episodio {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "lanza el episodio {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "lanza el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "lanza el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "lanza el episodio {Episode_Number} de {Show}",
+            "lanza el podcast {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "lanza el podcast {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "lanza el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "lanza el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "lanza el podcast {Episode_Number} de {Show}",
+            "lanza el programa {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "lanza el programa {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "lanza el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "lanza el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "lanza el programa {Episode_Number} de {Show}",
+            "lanza el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show}",
+            "lanza el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show} en {Station}",
+            "lanza el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show}",
+            "lanza el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "lanza el {Episode_Ordinal} cap\u00edtulo de {Show}",
+            "lanza el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show}",
+            "lanza el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show} en {Station}",
+            "lanza el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show}",
+            "lanza el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "lanza el {Episode_Ordinal} episodio de {Show}",
+            "lanza el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show}",
+            "lanza el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show} en {Station}",
+            "lanza el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show}",
+            "lanza el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "lanza el {Episode_Ordinal} podcast de {Show}",
+            "lanza el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show}",
+            "lanza el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show} en {Station}",
+            "lanza el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show}",
+            "lanza el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "lanza el {Episode_Ordinal} programa de {Show}",
+            "lanza la {Season_Ordinal} temporada de {Show}",
+            "lanza la {Season_Ordinal} temporada de {Show} en {Station}",
+            "lanza {Show}",
+            "lanza {Show} en {Station}",
+            "podcast {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "podcast {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "podcast {Episode_Number} de {Show}",
+            "pon el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "pon el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "pon el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "pon el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "pon el cap\u00edtulo {Episode_Number} de {Show}",
+            "pon el episodio {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "pon el episodio {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "pon el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "pon el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "pon el episodio {Episode_Number} de {Show}",
+            "pon el podcast {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "pon el podcast {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "pon el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "pon el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "pon el podcast {Episode_Number} de {Show}",
+            "pon el programa {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "pon el programa {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "pon el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "pon el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "pon el programa {Episode_Number} de {Show}",
+            "pon el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show}",
+            "pon el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show} en {Station}",
+            "pon el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show}",
+            "pon el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "pon el {Episode_Ordinal} cap\u00edtulo de {Show}",
+            "pon el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show}",
+            "pon el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show} en {Station}",
+            "pon el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show}",
+            "pon el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "pon el {Episode_Ordinal} episodio de {Show}",
+            "pon el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show}",
+            "pon el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show} en {Station}",
+            "pon el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show}",
+            "pon el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "pon el {Episode_Ordinal} podcast de {Show}",
+            "pon el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show}",
+            "pon el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show} en {Station}",
+            "pon el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show}",
+            "pon el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "pon el {Episode_Ordinal} programa de {Show}",
+            "pon la {Season_Ordinal} temporada de {Show}",
+            "pon la {Season_Ordinal} temporada de {Show} en {Station}",
+            "pon {Show}",
+            "pon {Show} en {Station}",
+            "ponga el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "ponga el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "ponga el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "ponga el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponga el cap\u00edtulo {Episode_Number} de {Show}",
+            "ponga el episodio {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "ponga el episodio {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "ponga el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "ponga el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponga el episodio {Episode_Number} de {Show}",
+            "ponga el podcast {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "ponga el podcast {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "ponga el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "ponga el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponga el podcast {Episode_Number} de {Show}",
+            "ponga el programa {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "ponga el programa {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "ponga el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "ponga el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponga el programa {Episode_Number} de {Show}",
+            "ponga el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show}",
+            "ponga el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show} en {Station}",
+            "ponga el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show}",
+            "ponga el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponga el {Episode_Ordinal} cap\u00edtulo de {Show}",
+            "ponga el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show}",
+            "ponga el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show} en {Station}",
+            "ponga el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show}",
+            "ponga el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponga el {Episode_Ordinal} episodio de {Show}",
+            "ponga el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show}",
+            "ponga el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show} en {Station}",
+            "ponga el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show}",
+            "ponga el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponga el {Episode_Ordinal} podcast de {Show}",
+            "ponga el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show}",
+            "ponga el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show} en {Station}",
+            "ponga el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show}",
+            "ponga el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponga el {Episode_Ordinal} programa de {Show}",
+            "ponga la {Season_Ordinal} temporada de {Show}",
+            "ponga la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponga {Show}",
+            "ponga {Show} en {Station}",
+            "ponme el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "ponme el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "ponme el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "ponme el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponme el cap\u00edtulo {Episode_Number} de {Show}",
+            "ponme el episodio {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "ponme el episodio {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "ponme el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "ponme el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponme el episodio {Episode_Number} de {Show}",
+            "ponme el podcast {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "ponme el podcast {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "ponme el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "ponme el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponme el podcast {Episode_Number} de {Show}",
+            "ponme el programa {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "ponme el programa {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "ponme el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "ponme el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponme el programa {Episode_Number} de {Show}",
+            "ponme el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show}",
+            "ponme el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show} en {Station}",
+            "ponme el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show}",
+            "ponme el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponme el {Episode_Ordinal} cap\u00edtulo de {Show}",
+            "ponme el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show}",
+            "ponme el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show} en {Station}",
+            "ponme el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show}",
+            "ponme el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponme el {Episode_Ordinal} episodio de {Show}",
+            "ponme el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show}",
+            "ponme el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show} en {Station}",
+            "ponme el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show}",
+            "ponme el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponme el {Episode_Ordinal} podcast de {Show}",
+            "ponme el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show}",
+            "ponme el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show} en {Station}",
+            "ponme el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show}",
+            "ponme el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponme el {Episode_Ordinal} programa de {Show}",
+            "ponme la {Season_Ordinal} temporada de {Show}",
+            "ponme la {Season_Ordinal} temporada de {Show} en {Station}",
+            "ponme {Show}",
+            "ponme {Show} en {Station}",
+            "programa {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "programa {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "programa {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "programa {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "programa {Episode_Number} de {Show}",
+            "quiero el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "quiero el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "quiero el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "quiero el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "quiero el cap\u00edtulo {Episode_Number} de {Show}",
+            "quiero el episodio {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "quiero el episodio {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "quiero el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "quiero el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "quiero el episodio {Episode_Number} de {Show}",
+            "quiero el podcast {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "quiero el podcast {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "quiero el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "quiero el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "quiero el podcast {Episode_Number} de {Show}",
+            "quiero el programa {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "quiero el programa {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "quiero el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "quiero el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "quiero el programa {Episode_Number} de {Show}",
+            "quiero el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show}",
+            "quiero el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show} en {Station}",
+            "quiero el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show}",
+            "quiero el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "quiero el {Episode_Ordinal} cap\u00edtulo de {Show}",
+            "quiero el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show}",
+            "quiero el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show} en {Station}",
+            "quiero el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show}",
+            "quiero el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "quiero el {Episode_Ordinal} episodio de {Show}",
+            "quiero el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show}",
+            "quiero el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show} en {Station}",
+            "quiero el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show}",
+            "quiero el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "quiero el {Episode_Ordinal} podcast de {Show}",
+            "quiero el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show}",
+            "quiero el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show} en {Station}",
+            "quiero el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show}",
+            "quiero el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "quiero el {Episode_Ordinal} programa de {Show}",
+            "quiero la {Season_Ordinal} temporada de {Show}",
+            "quiero la {Season_Ordinal} temporada de {Show} en {Station}",
+            "quiero {Show}",
+            "quiero {Show} en {Station}",
+            "reproduce el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "reproduce el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduce el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "reproduce el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduce el cap\u00edtulo {Episode_Number} de {Show}",
+            "reproduce el episodio {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "reproduce el episodio {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduce el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "reproduce el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduce el episodio {Episode_Number} de {Show}",
+            "reproduce el podcast {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "reproduce el podcast {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduce el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "reproduce el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduce el podcast {Episode_Number} de {Show}",
+            "reproduce el programa {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "reproduce el programa {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduce el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "reproduce el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduce el programa {Episode_Number} de {Show}",
+            "reproduce el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show}",
+            "reproduce el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduce el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show}",
+            "reproduce el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduce el {Episode_Ordinal} cap\u00edtulo de {Show}",
+            "reproduce el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show}",
+            "reproduce el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduce el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show}",
+            "reproduce el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduce el {Episode_Ordinal} episodio de {Show}",
+            "reproduce el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show}",
+            "reproduce el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduce el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show}",
+            "reproduce el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduce el {Episode_Ordinal} podcast de {Show}",
+            "reproduce el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show}",
+            "reproduce el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduce el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show}",
+            "reproduce el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduce el {Episode_Ordinal} programa de {Show}",
+            "reproduce la {Season_Ordinal} temporada de {Show}",
+            "reproduce la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduce {Show}",
+            "reproduce {Show} en {Station}",
+            "reproduzca el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "reproduzca el cap\u00edtulo {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduzca el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "reproduzca el cap\u00edtulo {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduzca el cap\u00edtulo {Episode_Number} de {Show}",
+            "reproduzca el episodio {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "reproduzca el episodio {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduzca el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "reproduzca el episodio {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduzca el episodio {Episode_Number} de {Show}",
+            "reproduzca el podcast {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "reproduzca el podcast {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduzca el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "reproduzca el podcast {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduzca el podcast {Episode_Number} de {Show}",
+            "reproduzca el programa {Episode_Number} de la temporada {Season_Number} de {Show}",
+            "reproduzca el programa {Episode_Number} de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduzca el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show}",
+            "reproduzca el programa {Episode_Number} de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduzca el programa {Episode_Number} de {Show}",
+            "reproduzca el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show}",
+            "reproduzca el {Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduzca el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show}",
+            "reproduzca el {Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduzca el {Episode_Ordinal} cap\u00edtulo de {Show}",
+            "reproduzca el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show}",
+            "reproduzca el {Episode_Ordinal} episodio de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduzca el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show}",
+            "reproduzca el {Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduzca el {Episode_Ordinal} episodio de {Show}",
+            "reproduzca el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show}",
+            "reproduzca el {Episode_Ordinal} podcast de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduzca el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show}",
+            "reproduzca el {Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduzca el {Episode_Ordinal} podcast de {Show}",
+            "reproduzca el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show}",
+            "reproduzca el {Episode_Ordinal} programa de la temporada {Season_Number} de {Show} en {Station}",
+            "reproduzca el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show}",
+            "reproduzca el {Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduzca el {Episode_Ordinal} programa de {Show}",
+            "reproduzca la {Season_Ordinal} temporada de {Show}",
+            "reproduzca la {Season_Ordinal} temporada de {Show} en {Station}",
+            "reproduzca {Show}",
+            "reproduzca {Show} en {Station}",
+            "{Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show}",
+            "{Episode_Ordinal} cap\u00edtulo de la temporada {Season_Number} de {Show} en {Station}",
+            "{Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show}",
+            "{Episode_Ordinal} cap\u00edtulo de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "{Episode_Ordinal} cap\u00edtulo de {Show}",
+            "{Episode_Ordinal} episodio de la temporada {Season_Number} de {Show}",
+            "{Episode_Ordinal} episodio de la temporada {Season_Number} de {Show} en {Station}",
+            "{Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show}",
+            "{Episode_Ordinal} episodio de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "{Episode_Ordinal} episodio de {Show}",
+            "{Episode_Ordinal} podcast de la temporada {Season_Number} de {Show}",
+            "{Episode_Ordinal} podcast de la temporada {Season_Number} de {Show} en {Station}",
+            "{Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show}",
+            "{Episode_Ordinal} podcast de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "{Episode_Ordinal} podcast de {Show}",
+            "{Episode_Ordinal} programa de la temporada {Season_Number} de {Show}",
+            "{Episode_Ordinal} programa de la temporada {Season_Number} de {Show} en {Station}",
+            "{Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show}",
+            "{Episode_Ordinal} programa de la {Season_Ordinal} temporada de {Show} en {Station}",
+            "{Episode_Ordinal} programa de {Show}"
+          ],
+          "slots": [
+            {
+              "name": "Show",
+              "samples": [
+                "{Show}",
+                "de {Show}"
+              ],
+              "type": "Shows"
+            },
+            {
+              "name": "Episode_Number",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "Season_Number",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "Station",
+              "type": "Stations"
+            },
+            {
+              "name": "Season_Ordinal",
+              "type": "Ordinals"
+            },
+            {
+              "name": "Episode_Ordinal",
+              "type": "Ordinals"
+            }
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        }
+      ],
+      "invocationName": "radioco",
+      "types": [
+        {
+          "name": "Shows",
+          "values": [
+            {
+              "id": 1,
+              "name": {
+                "value": "Spoiler"
+              }
+            },
+            {
+              "id": 3,
+              "name": {
+                "value": "Falso Nueve"
+              }
+            },
+            {
+              "id": 4,
+              "name": {
+                "value": "El Desinformativo"
+              }
+            },
+            {
+              "id": 5,
+              "name": {
+                "value": "Sin Etiquetas"
+              }
+            },
+            {
+              "id": 6,
+              "name": {
+                "value": "A fume de carozo"
+              }
+            },
+            {
+              "id": 7,
+              "name": {
+                "value": "Alegria"
+              }
+            },
+            {
+              "id": 8,
+              "name": {
+                "value": "Manda carallo!"
+              }
+            },
+            {
+              "id": 9,
+              "name": {
+                "value": "Radiantes FM"
+              }
+            },
+            {
+              "id": 11,
+              "name": {
+                "value": "Fantasma Accidental"
+              }
+            },
+            {
+              "id": 12,
+              "name": {
+                "value": "Cuac est\u00e1 a pasar"
+              }
+            },
+            {
+              "id": 13,
+              "name": {
+                "value": "Reversi\u00f3n"
+              }
+            },
+            {
+              "id": 14,
+              "name": {
+                "value": "Folk in Tr\u00edo"
+              }
+            },
+            {
+              "id": 15,
+              "name": {
+                "value": "Recendo"
+              }
+            },
+            {
+              "id": 16,
+              "name": {
+                "value": "Una noche en la \u00f3pera"
+              }
+            },
+            {
+              "id": 17,
+              "name": {
+                "value": "Azucar habanero"
+              }
+            },
+            {
+              "id": 18,
+              "name": {
+                "value": "Caf\u00e9 con gotas"
+              }
+            },
+            {
+              "id": 19,
+              "name": {
+                "value": "Trankimagazine"
+              }
+            },
+            {
+              "id": 20,
+              "name": {
+                "value": "Simplemente Gente"
+              }
+            },
+            {
+              "id": 21,
+              "name": {
+                "value": "R que R"
+              }
+            },
+            {
+              "id": 22,
+              "name": {
+                "value": "Multiplex"
+              }
+            },
+            {
+              "id": 23,
+              "name": {
+                "value": "Ori\u00f3n 2.1"
+              }
+            },
+            {
+              "id": 24,
+              "name": {
+                "value": "Dentro de un orden"
+              }
+            },
+            {
+              "id": 28,
+              "name": {
+                "value": "\u00c1brete de orellas"
+              }
+            },
+            {
+              "id": 34,
+              "name": {
+                "value": "Radio Prometea"
+              }
+            },
+            {
+              "id": 37,
+              "name": {
+                "value": "Ar de Coru\u00f1a"
+              }
+            },
+            {
+              "id": 38,
+              "name": {
+                "value": "Radioactiva"
+              }
+            },
+            {
+              "id": 39,
+              "name": {
+                "value": "Benditos Jueves"
+              }
+            },
+            {
+              "id": 42,
+              "name": {
+                "value": "Xeraci\u00f3n Brav\u00fa"
+              }
+            },
+            {
+              "id": 44,
+              "name": {
+                "value": "Circo Pirata"
+              }
+            },
+            {
+              "id": 47,
+              "name": {
+                "value": "Ondas do C\u00e1rcere"
+              }
+            },
+            {
+              "id": 48,
+              "name": {
+                "value": "Mi rollo es el Rock"
+              }
+            },
+            {
+              "id": 49,
+              "name": {
+                "value": "Tapas y raciones"
+              }
+            },
+            {
+              "id": 51,
+              "name": {
+                "value": "Debate das Elecci\u00f3ns \u00e1 Reitor\u00eda da UDC 2015"
+              }
+            },
+            {
+              "id": 55,
+              "name": {
+                "value": "Que no es poco Especial Fin de A\u00f1o"
+              }
+            },
+            {
+              "id": 56,
+              "name": {
+                "value": "Clima 69 | Roberto Dold\u00e1n"
+              }
+            },
+            {
+              "id": 57,
+              "name": {
+                "value": "Sopas con Onda"
+              }
+            },
+            {
+              "id": 58,
+              "name": {
+                "value": "Algo pasa en Hollywood"
+              }
+            },
+            {
+              "id": 59,
+              "name": {
+                "value": "Reportaxe polo D\u00eda da Muller"
+              }
+            },
+            {
+              "id": 60,
+              "name": {
+                "value": "Se va a liar... y lo sabes"
+              }
+            },
+            {
+              "id": 61,
+              "name": {
+                "value": "Especial CrossOver Revival"
+              }
+            },
+            {
+              "id": 63,
+              "name": {
+                "synonyms": [
+                  "Ciencia en la calle"
+                ],
+                "value": "D\u00eda da Ciencia na R\u00faa"
+              }
+            },
+            {
+              "id": 64,
+              "name": {
+                "value": "El Balc\u00f3n"
+              }
+            },
+            {
+              "id": 65,
+              "name": {
+                "value": "La Tarde a Nuestra Manera"
+              }
+            },
+            {
+              "id": 66,
+              "name": {
+                "value": "Millennial"
+              }
+            },
+            {
+              "id": 67,
+              "name": {
+                "value": "La Juventud del Papa"
+              }
+            },
+            {
+              "id": 70,
+              "name": {
+                "value": "Loco Iv\u00e1n"
+              }
+            },
+            {
+              "id": 71,
+              "name": {
+                "value": "La Guardia de Walter"
+              }
+            },
+            {
+              "id": 72,
+              "name": {
+                "value": "Nubes de Papel"
+              }
+            },
+            {
+              "id": 73,
+              "name": {
+                "synonyms": [
+                  "Radio Senior",
+                  "Radio Sr."
+                ],
+                "value": "RadioS\u00e9nior"
+              }
+            },
+            {
+              "id": 74,
+              "name": {
+                "value": "Cuak'n'roll"
+              }
+            },
+            {
+              "id": 75,
+              "name": {
+                "value": "Radio Barrio"
+              }
+            },
+            {
+              "id": 76,
+              "name": {
+                "value": "ACAMPA"
+              }
+            },
+            {
+              "id": 77,
+              "name": {
+                "value": "La hora del Rock and Roll"
+              }
+            },
+            {
+              "id": 78,
+              "name": {
+                "value": "Dale voz"
+              }
+            },
+            {
+              "id": 79,
+              "name": {
+                "value": "Especial Festival Noroeste Estrella Galicia"
+              }
+            },
+            {
+              "id": 82,
+              "name": {
+                "value": "Y a ti qu\u00e9 te importa?"
+              }
+            },
+            {
+              "id": 83,
+              "name": {
+                "synonyms": [
+                  "En Boxes"
+                ],
+                "value": "EnBoxes"
+              }
+            },
+            {
+              "id": 85,
+              "name": {
+                "synonyms": [
+                  "marat\u00f3n quack resiste"
+                ],
+                "value": "MARATON: CUAC RESISTE"
+              }
+            },
+            {
+              "id": 86,
+              "name": {
+                "value": "Radiocassette"
+              }
+            },
+            {
+              "id": 87,
+              "name": {
+                "value": "La Regadera"
+              }
+            },
+            {
+              "id": 88,
+              "name": {
+                "value": "EnWorking"
+              }
+            },
+            {
+              "id": 89,
+              "name": {
+                "value": "PerforAcci\u00f3n"
+              }
+            },
+            {
+              "id": 90,
+              "name": {
+                "value": "Matinal Radio Vallekas: Especial Cuac FM #CuacResiste"
+              }
+            },
+            {
+              "id": 91,
+              "name": {
+                "value": "CAMBIA si CAMBIO"
+              }
+            },
+            {
+              "id": 93,
+              "name": {
+                "value": "Heima"
+              }
+            },
+            {
+              "id": 94,
+              "name": {
+                "value": "Poca Broma!"
+              }
+            },
+            {
+              "id": 95,
+              "name": {
+                "value": "Internet de tu Color Favorito"
+              }
+            },
+            {
+              "id": 96,
+              "name": {
+                "value": "MalhumorHadas"
+              }
+            },
+            {
+              "id": 97,
+              "name": {
+                "value": "Novatos en emisi\u00f3n"
+              }
+            },
+            {
+              "id": 104,
+              "name": {
+                "synonyms": [
+                  "marat\u00f3n quack volv\u00e9",
+                  "marat\u00f3n quack vuelve"
+                ],
+                "value": "MARATON: CUAC VOLVE"
+              }
+            },
+            {
+              "id": 105,
+              "name": {
+                "value": "Cuidado coraz\u00f3n!"
+              }
+            },
+            {
+              "id": 106,
+              "name": {
+                "value": "American Radio (Died Young)"
+              }
+            },
+            {
+              "id": 107,
+              "name": {
+                "value": "Turbulencias"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Ordinals",
+          "values": [
+            {
+              "id": 1,
+              "name": {
+                "synonyms": [
+                  "primero",
+                  "primera"
+                ],
+                "value": "primer"
+              }
+            },
+            {
+              "id": 2,
+              "name": {
+                "synonyms": [
+                  "segunda"
+                ],
+                "value": "segundo"
+              }
+            },
+            {
+              "id": 3,
+              "name": {
+                "synonyms": [
+                  "tercero",
+                  "tercera"
+                ],
+                "value": "tercer"
+              }
+            },
+            {
+              "id": 4,
+              "name": {
+                "synonyms": [
+                  "cuarta"
+                ],
+                "value": "cuarto"
+              }
+            },
+            {
+              "id": 5,
+              "name": {
+                "synonyms": [
+                  "quinta"
+                ],
+                "value": "quinto"
+              }
+            },
+            {
+              "id": 6,
+              "name": {
+                "synonyms": [
+                  "sexta"
+                ],
+                "value": "sexto"
+              }
+            },
+            {
+              "id": 7,
+              "name": {
+                "synonyms": [
+                  "s\u00e9ptima"
+                ],
+                "value": "s\u00e9ptimo"
+              }
+            },
+            {
+              "id": 8,
+              "name": {
+                "synonyms": [
+                  "octava"
+                ],
+                "value": "octavo"
+              }
+            },
+            {
+              "id": 9,
+              "name": {
+                "synonyms": [
+                  "novena"
+                ],
+                "value": "noveno"
+              }
+            },
+            {
+              "id": 10,
+              "name": {
+                "synonyms": [
+                  "d\u00e9cima"
+                ],
+                "value": "d\u00e9cimo"
+              }
+            },
+            {
+              "id": 11,
+              "name": {
+                "synonyms": [
+                  "decimoprimero",
+                  "decimoprimer",
+                  "d\u00e9cimo primero",
+                  "d\u00e9cimo primer",
+                  "und\u00e9cima",
+                  "decimoprimera",
+                  "d\u00e9cima primera"
+                ],
+                "value": "und\u00e9cimo"
+              }
+            },
+            {
+              "id": 12,
+              "name": {
+                "synonyms": [
+                  "decimosegundo",
+                  "d\u00e9cimo segundo",
+                  "duod\u00e9cima",
+                  "decimosegunda",
+                  "d\u00e9cima segunda"
+                ],
+                "value": "duod\u00e9cimo"
+              }
+            },
+            {
+              "id": 13,
+              "name": {
+                "synonyms": [
+                  "decimotercero",
+                  "decimotercer",
+                  "d\u00e9cimo tercer",
+                  "decimotercera",
+                  "d\u00e9cima tercera"
+                ],
+                "value": "d\u00e9cimo tercero"
+              }
+            },
+            {
+              "id": 14,
+              "name": {
+                "synonyms": [
+                  "decimocuarto",
+                  "decimocuarta",
+                  "d\u00e9cima cuarta"
+                ],
+                "value": "d\u00e9cimo cuarto"
+              }
+            },
+            {
+              "id": 15,
+              "name": {
+                "synonyms": [
+                  "decimoquinto",
+                  "decimoquinta",
+                  "d\u00e9cima quinta"
+                ],
+                "value": "d\u00e9cimo quinto"
+              }
+            },
+            {
+              "id": 16,
+              "name": {
+                "synonyms": [
+                  "decimosexto",
+                  "d\u00e9cimo sexto",
+                  "decimosexta",
+                  "d\u00e9cima sexta"
+                ],
+                "value": "d\u00e9cima sexto"
+              }
+            },
+            {
+              "id": 17,
+              "name": {
+                "synonyms": [
+                  "decimos\u00e9ptimo",
+                  "decimos\u00e9ptima",
+                  "d\u00e9cima s\u00e9ptima"
+                ],
+                "value": "d\u00e9cimo s\u00e9ptimo"
+              }
+            },
+            {
+              "id": 18,
+              "name": {
+                "synonyms": [
+                  "decimoctavo",
+                  "decimoctava",
+                  "d\u00e9cima octava"
+                ],
+                "value": "d\u00e9cimo octavo"
+              }
+            },
+            {
+              "id": 19,
+              "name": {
+                "synonyms": [
+                  "decimonoveno",
+                  "decimonovena",
+                  "d\u00e9cima novena"
+                ],
+                "value": "d\u00e9cimo noveno"
+              }
+            },
+            {
+              "id": 20,
+              "name": {
+                "synonyms": [
+                  "vig\u00e9sima"
+                ],
+                "value": "vig\u00e9simo"
+              }
+            },
+            {
+              "id": 21,
+              "name": {
+                "synonyms": [
+                  "vigesimoprimero",
+                  "vigesimoprimera",
+                  "vig\u00e9sima primera"
+                ],
+                "value": "vig\u00e9simo primero"
+              }
+            },
+            {
+              "id": 22,
+              "name": {
+                "synonyms": [
+                  "vigesimosegundo",
+                  "vigesimosegunda",
+                  "vig\u00e9sima segunda"
+                ],
+                "value": "vig\u00e9simo segundo"
+              }
+            },
+            {
+              "id": 23,
+              "name": {
+                "synonyms": [
+                  "vigesimotercero",
+                  "vigesimotercera",
+                  "vig\u00e9sima tercera"
+                ],
+                "value": "vig\u00e9simo tercero"
+              }
+            },
+            {
+              "id": 24,
+              "name": {
+                "synonyms": [
+                  "vigesimocuarto",
+                  "vigesimocuarta",
+                  "vig\u00e9sima cuarta"
+                ],
+                "value": "vig\u00e9simo cuarto"
+              }
+            },
+            {
+              "id": 25,
+              "name": {
+                "synonyms": [
+                  "vigesimoquinto",
+                  "vigesimoquinta",
+                  "vig\u00e9sima quinta"
+                ],
+                "value": "vig\u00e9simo quinto"
+              }
+            },
+            {
+              "id": 26,
+              "name": {
+                "synonyms": [
+                  "vigesimosexto",
+                  "vigesimosexta",
+                  "vig\u00e9sima sexta"
+                ],
+                "value": "vig\u00e9simo sexto"
+              }
+            },
+            {
+              "id": 27,
+              "name": {
+                "synonyms": [
+                  "vigesimos\u00e9ptimo",
+                  "vigesimos\u00e9ptima",
+                  "vig\u00e9sima s\u00e9ptima"
+                ],
+                "value": "vig\u00e9simo s\u00e9ptimo"
+              }
+            },
+            {
+              "id": 28,
+              "name": {
+                "synonyms": [
+                  "vigesimoctavo",
+                  "vigesimoctava",
+                  "vig\u00e9sima octava"
+                ],
+                "value": "vig\u00e9simo octavo"
+              }
+            },
+            {
+              "id": 29,
+              "name": {
+                "synonyms": [
+                  "vigesimonoveno",
+                  "vigesimonovena",
+                  "vig\u00e9sima novena"
+                ],
+                "value": "vig\u00e9simo noveno"
+              }
+            },
+            {
+              "id": 30,
+              "name": {
+                "synonyms": [
+                  "trig\u00e9sima"
+                ],
+                "value": "trig\u00e9simo"
+              }
+            },
+            {
+              "id": -1,
+              "name": {
+                "synonyms": [
+                  "ultimo"
+                ],
+                "value": "\u00faltimo"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Stations",
+          "values": [
+            {
+              "name": {
+                "value": "Cuac FM"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1029459471819.248426187592",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "De que programa?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "2"
+}
